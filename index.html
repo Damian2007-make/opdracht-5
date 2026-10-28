@@ -1,1 +1,129 @@
-test
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux commando's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Linux commando's</h1>
+    <p>Gemaakt door Damian Jeucken</p>
+    <p>Op deze pagina staan Linux commando's die handig zijn voor DevOps. Bij elk commando staat wat het doet en een voorbeeld.</p>
+
+    <h2>Navigeren in mappen</h2>
+
+    <h3>pwd</h3>
+    <p>Laat zien in welke map je op dit moment zit.</p>
+    <p>Voorbeeld: <code>pwd</code></p>
+
+    <h3>ls</h3>
+    <p>Laat de bestanden en mappen in de huidige map zien.</p>
+    <p>Voorbeeld: <code>ls</code></p>
+    <p>Met <code>ls -l</code> zie je meer informatie. Met <code>ls -a</code> zie je ook verborgen bestanden.</p>
+
+    <h3>cd</h3>
+    <p>Hiermee ga je naar een andere map.</p>
+    <p>Voorbeeld: <code>cd /var/log</code></p>
+    <p>Met <code>cd ..</code> ga je een map omhoog. Met <code>cd ~</code> ga je naar je persoonlijke map.</p>
+
+    <h3>tree</h3>
+    <p>Laat mappen en bestanden zien in een boomstructuur.</p>
+    <p>Voorbeeld: <code>tree</code></p>
+    <p>Dit programma moet soms eerst worden geïnstalleerd.</p>
+
+    <h2>Bestanden en mappen beheren</h2>
+
+    <h3>touch</h3>
+    <p>Maakt een leeg bestand als het nog niet bestaat. Als het al bestaat, worden de tijdstempels aangepast.</p>
+    <p>Voorbeeld: <code>touch oefening.txt</code></p>
+
+    <h3>mkdir</h3>
+    <p>Maakt een nieuwe map.</p>
+    <p>Voorbeeld: <code>mkdir school</code></p>
+
+    <h3>rm</h3>
+    <p>Verwijdert een bestand.</p>
+    <p>Voorbeeld: <code>rm oefening.txt</code></p>
+    <p>Met <code>rm -r school</code> verwijder je de map school met de inhoud. Let op: dit gaat niet naar de prullenbak.</p>
+
+    <h3>cp</h3>
+    <p>Maakt een kopie van een bestand.</p>
+    <p>Voorbeeld: <code>cp oefening.txt kopie.txt</code></p>
+
+    <h3>mv</h3>
+    <p>Verplaatst een bestand of geeft het een andere naam.</p>
+    <p>Andere naam geven: <code>mv oefening.txt huiswerk.txt</code></p>
+    <p>Verplaatsen naar een bestaande map: <code>mv huiswerk.txt school/</code></p>
+
+    <h2>Tekst bekijken en bewerken</h2>
+
+    <h3>nano</h3>
+    <p>Opent een teksteditor in de terminal. Hiermee kun je tekst schrijven en aanpassen.</p>
+    <p>Voorbeeld: <code>nano oefening.txt</code></p>
+    <p>Opslaan doe je met Ctrl + O en daarna Enter. Afsluiten doe je met Ctrl + X.</p>
+
+    <h3>cat</h3>
+    <p>Laat de volledige inhoud van een tekstbestand in de terminal zien.</p>
+    <p>Voorbeeld: <code>cat oefening.txt</code></p>
+
+    <h3>less</h3>
+    <p>Hiermee bekijk je een tekstbestand en kun je door de tekst bladeren. Dit is handig bij lange bestanden.</p>
+    <p>Voorbeeld: <code>less oefening.txt</code></p>
+    <p>Gebruik de pijltjestoetsen om te bladeren en druk op q om te stoppen.</p>
+
+    <h3>head</h3>
+    <p>Laat standaard de eerste 10 regels van een bestand zien.</p>
+    <p>Voorbeeld: <code>head oefening.txt</code></p>
+    <p>Alleen de eerste 5 regels: <code>head -n 5 oefening.txt</code></p>
+
+    <h3>tail</h3>
+    <p>Laat standaard de laatste 10 regels van een bestand zien.</p>
+    <p>Voorbeeld: <code>tail oefening.txt</code></p>
+    <p>Alleen de laatste 5 regels: <code>tail -n 5 oefening.txt</code></p>
+
+    <h2>Hulp en handige commando's</h2>
+
+    <h3>man</h3>
+    <p>Opent de handleiding van een commando.</p>
+    <p>Voorbeeld: <code>man ls</code></p>
+    <p>Druk op q om de handleiding te sluiten.</p>
+
+    <h3>clear</h3>
+    <p>Maakt het zichtbare terminalscherm leeg.</p>
+    <p>Voorbeeld: <code>clear</code></p>
+
+    <h3>whoami</h3>
+    <p>Laat zien met welke gebruikersnaam je werkt.</p>
+    <p>Voorbeeld: <code>whoami</code></p>
+
+    <h3>sudo</h3>
+    <p>Voert een commando uit met beheerdersrechten als je daarvoor toestemming hebt.</p>
+    <p>Voorbeeld: <code>sudo apt update</code></p>
+    <p>Dit voorbeeld werkt de lijst met beschikbare softwarepakketten bij in Ubuntu.</p>
+
+    <h2>Git en SSH</h2>
+    <p>Git houdt wijzigingen in bestanden bij. GitHub is een website waar je Git-projecten online kunt bewaren en samen kunt werken. Met SSH kun je veilig verbinding maken met een andere computer.</p>
+
+    <h3>git init</h3>
+    <p>Start een Git-repository in de huidige map.</p>
+    <p>Voorbeeld: <code>git init</code></p>
+
+    <h3>git status</h3>
+    <p>Laat zien welke bestanden veranderd zijn en welke klaarstaan voor een commit.</p>
+    <p>Voorbeeld: <code>git status</code></p>
+
+    <h3>git add</h3>
+    <p>Zet wijzigingen in een bestand klaar voor de volgende commit.</p>
+    <p>Voorbeeld: <code>git add index.html</code></p>
+
+    <h3>git commit</h3>
+    <p>Slaat de klaargezette wijzigingen op in de lokale Git-geschiedenis met een bericht erbij.</p>
+    <p>Voorbeeld: <code>git commit -m "HTML pagina toegevoegd"</code></p>
+
+    <h3>ssh</h3>
+    <p>Maakt een beveiligde verbinding met een andere computer waarop een SSH-server draait.</p>
+    <p>Voorbeeld: <code>ssh -p 2222 damian-vm@localhost</code></p>
+    <p>Met dit commando maak ik vanuit Windows CMD verbinding met mijn Linux-VM. VMware stuurt poort 2222 door naar poort 22 van de VM.</p>
+</body>
+</html>
